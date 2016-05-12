@@ -7,7 +7,6 @@ var app = require('express')(),
     _db;
 
 app.use(morgan('dev'));
-
 app.use(bodyParser.json());
 
 MongoClient.connect(mongoUrl, function(err, db) {
